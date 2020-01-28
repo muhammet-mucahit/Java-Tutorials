@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!-- HTML5 -->
+<html>
+
+<head>
+    <style>
+        #paragraph {
+            background-color: coral;
+        }
+
+        .show {
+
+        }
+
+        .hide {
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p id="paragraph" class="ahmet">Merhaba Hocam</p>
+        <button id="changeColor" onclick="changeColor()">Change Color</button>
+    </div>
+
+
+<script>
+    alert("Some text");
+    function changeColor() {
+        var p = document.getElementById("paragraph");
+        p.style.backgroundColor = "#03fc73";
+        p.innerHTML = "Hocam Merhaba";
+    }
+
+    document.getElementById("changeColor").click();
+    
+</script>
+</body>
+</html>
